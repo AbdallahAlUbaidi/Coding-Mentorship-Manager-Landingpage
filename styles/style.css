@@ -3,9 +3,440 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 
+html
+{
+    scroll-behavior: smooth;
+}
+
+.hero-section
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( to right , rgba(0 , 0, 0, 0.7) , rgba(0 , 0, 0, 0.65)) , url(../images/Home-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav.nav-bar
+{   
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    margin: auto;
+    
+}
+
+ul.nav-list
+{
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+li.nav-item
+{
+    margin-left: 40px;
+}
+
+.logo .logo-link
+{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo .logo-link:hover
+{
+    color: #bc5e55;
+}
+
+.logo code
+{
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 1.8em;
+    color: #bc5e55;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.logo .logo-link:hover code
+{
+    color: #fff;
+}
+
+
+a.nav-link
+{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    text-transform: uppercase;
+    position: relative;
+    transform: all 0.3s ease;
+    padding: 0 8px;
+}
+
+a.nav-link::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #bc5e55;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+}
+
+a.nav-link:hover
+{
+    color: #bc5e55;
+
+}
+
+a.nav-link:hover::after{
+    width: 100%;
+}
+
+
+.hero-content
+{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero-content h1
+{
+    font-size:3em;
+    margin-top: 80px;
+}
+
+.hero-content h1::after
+{
+    content: "?";
+    color: #bc5e55;
+    font-size: 2em;
+}
+.hero-content p
+{
+    margin: 0px auto;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 2px;
+    opacity: .9;
+    padding: 0 20px;
+    width: fit-content;
+}
+
+.btn
+{
+    width: 250px;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: 2px solid #bc5e55;
+    background: #bc5e5531;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span
+{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    background: #bc5e55;
+    opacity: .7;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover span{
+    width: 100%;
+}
+
+.btn:hover
+{
+    border: none;
+}
+
+.container
+{
+    position: fixed;
+    width: max-content;
+    height: max-content;
+    right: 0;
+    bottom: 0;
+}
+
+.container-open
+{
+    width: 25%;
+    height: 100vh;
+}
+
+.menu-btn
+{
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #bc5e55;
+    background-color: transparent;
+    border-radius: 20px;
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.menu-btn span
+{
+    width: 50%;
+    background-color: #bc5e55;
+    height: 2px;
+    margin: 3px 0;
+}
+aside.vertical-nav-container
+{
+    float: right;
+    width: 100%;
+    height: 100%;
+    
+}
+.vertical-nav
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #282c34;
+    
+    padding: 20px 0;
+    transition: 0.5s;
+    
+}
+
+.vertical-nav ul
+{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.vertical-nav ul li
+{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.vertical-nav ul li a
+{
+    width: 100%;
+}
+
+
+.close-menu
+{
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    float: right;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.close-menu span
+{
+    width: 50%;
+    background-color: #fff;
+    height: 2px;
+    margin: 3px 0;
+}
+
+.close-menu span:first-child
+{
+    transform: translatex(-50px) rotatez(45deg) translate(35px , -12px);
+}
+
+.close-menu span:nth-child(2)
+{
+    transform: translatex(-50px);
+    background: transparent; 
+}
+
+.close-menu span:nth-child(3)
+{
+    transform:  translatex(-50px) rotate(-45deg) translate(35px , 35px ); 
+    
+}
+.about-us-section
+{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p
+{
+    margin: auto;
+    font-size: 20px;
+    color: #bc5e55;
+    font: bolder;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1
+{
+    font-size: 50px;
+}
+
+
+.features
+{
+    flex-basis: 50%;
+}
+.features-box
+{
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.features-img
+{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img
+{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.features h1
+{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #bc5e55;
+}
+
+.features-desc
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-icon .fa
+{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #bc5e55;
+    border: 1px solid #bc5e55;
+    font-weight: 500;
+}
+
+.features-text p
+{
+    padding:  0 20px;
+    text-align: initial;
+}
+
+.our-montors-section
+{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+
+.mentor-box
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.mentor
+{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    padding: 40px;
+    box-shadow: 0 8px 16px #bc5e5552;
+
+}
+
+.personal-image img
+{
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 40px;
+    border:3px solid #282c34;
+}
+
+.contact-us
+{
+    width: 100%;
+    height: 40vh;
+    padding: 70px 0;
+    background-color: #282c34;
+}

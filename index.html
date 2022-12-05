@@ -4,62 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script defer src="./js/javascript.js"></script>
-    <title>CSS part 2</title>
+    <title>CodingMentor</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Learn More</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Soures</a>
-                </li>
+    <section class="hero-section" id = "home">
+        <nav class="nav-bar">
+            <span class="logo"><a href="#home" class="logo-link"><code>&#60;Coding\&#62;</code>Mentor</a></span>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#mentors" class="nav-link">Our Mentors</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
             </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Want to Learn Coding From a Professional</h1>
+            <p>Connect to many experienced and professional mentors around the world,professional with skill covering <br> most popular programming languages and technologies </p>
+            <div class="btn-container">
+                <button class="btn"><span></span>Start Now</button>
+                <button class="btn"><span></span>Sign up as a Mentor</button>
+            </div>
         </div>
-    </nav>
-    <header>
-        <section class="hero-section">
-            <aside>
-                <div class="menu-container">
-                    <ul class="menu-links">
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Definition</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">History</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Apllications</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">How it works</a>
-                        </li>
-
-                    </ul>
+    </section>
+    <div class="container">
+        <aside class="vertical-nav-container">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <div class="vertical-nav">
+    
+                <ul class="nav-list">
+                    <li>
+                        <div class="close-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#mentors" class="nav-link">Our Mentors</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+        <section class="about-us-section" id="about">
+            <div class="title-text">
+                <p>About us</p>
+                <h1>Why Use this website</h1>
+            </div>
+            <div class="features-box">
+                <div class="features">
+                    <h1>Experienced Mentors</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-code-fork"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>We chose our montors with strict criteria with expericence no less than two years</p>
+                        </div>
+                    </div>
                 </div>
-            </aside>
-            <div class="text-container">
-                <h1 class="section-header">
-                    
-                </h1>
-                <p class="secion-description">
 
-                </p>
+                <div class="features-img">
+                    <img src="./images/experienced.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features">
+                    <h1>Code with hands on experience</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>No silly examples with animal classes , you will be solving real world problems with cutting edge techniques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-img">
+                    <img src="./images/realworld.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="features-box">
+                <div class="features">
+                    <h1>You can cancel anytime</h1>
+                    <div class="features-desc">
+                        <div class="features-icon">
+                            <i class="fa fa-credit-card-alt"></i>
+                        </div>
+                        <div class="features-text">
+                            <p>Despite theses features if you still don't like our services you can cancel anytime you want and we will handle the loss</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-img">
+                    <img src="./images/Money.jpg" alt="">
+                </div>
             </div>
         </section>
 
-        <section class="testimonals">
+        <section class="our-montors-section" id="mentors">
+            <div class="title-text">
+                <p>Meet Our Mentors</p>
+                <h1>Who are the Mentors</h1>
+            </div>
 
+            <div class="mentor-box">
+                <div class="mentor">
+                    <div class="personal-image"><img src="./images/profile-1.jpg" alt=""></div>
+                    <div class="bio"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est blanditiis iusto maiores facere, eius quo fugit culpa similique doloremque enim sunt optio perspiciatis nesciunt omnis non sapiente rerum consequatur!</p></div>
+                </div>
+                <div class="mentor">
+                    <div class="personal-image"><img src="./images/profile-2.jpg" alt=""></div>
+                    <div class="bio"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto reprehenderit, provident blanditiis ipsum tempora quia facere soluta, officiis repudiandae voluptate deserunt optio fuga labore et suscipit. Sapiente dolorum placeat officia.</p></div>
+                </div>
+                <div class="mentor">
+                    <div class="personal-image"><img src="./images/profile-3.jpg" alt=""></div>
+                    <div class="bio"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error itaque nihil facere maxime amet temporibus, dignissimos repudiandae sint fuga, dolore id repellat dolorum fugit laboriosam nobis cupiditate incidunt obcaecati? Fuga.</p></div>
+                </div>
+                <div class="mentor">
+                    <div class="personal-image"><img src="./images/profile-1.jpg" alt=""></div>
+                    <div class="bio"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, molestiae omnis! Repellendus quas inventore sit ex ratione tempore a reiciendis pariatur, voluptates eligendi. Delectus reprehenderit animi nemo, ipsum esse dolores?</p></div>
+                </div>
+            </div>
         </section>
-        
 
-    </header>
+        <section class="contact-us" id ="contact">
+            <div class="email"></div>
+            <div class="phone"></div>     
+        </section>
 </body>
 </html>
