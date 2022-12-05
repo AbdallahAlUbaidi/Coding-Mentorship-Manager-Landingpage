@@ -122,7 +122,7 @@ a.nav-link:hover::after{
 
 .hero-content h1
 {
-    font-size:3em;
+    font-size:2.5em;
     margin-top: 80px;
 }
 
@@ -145,9 +145,9 @@ a.nav-link:hover::after{
 
 .btn
 {
-    width: 250px;
+    width: 220px;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     margin: 30px 20px;
     font-weight: 500;
@@ -213,6 +213,22 @@ a.nav-link:hover::after{
     float: right;
     margin: 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.menu-btn:hover
+{
+    background-color: #bc5e55;
+
+}
+
+.menu-btn:hover span
+{
+    background-color: white;
+}
+
+.menu-btn-open
+{
+    display: none;
 }
 
 .menu-btn span
@@ -240,7 +256,10 @@ aside.vertical-nav-container
     transition: 0.5s;
     
 }
-
+.vertical-nav-open
+{
+    display: flex;
+}
 .vertical-nav ul
 {
     
@@ -439,4 +458,102 @@ aside.vertical-nav-container
     height: 40vh;
     padding: 70px 0;
     background-color: #282c34;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-us-container
+{
+    flex-basis: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 50px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.social-media-container
+{
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-container a{
+    color: white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 7px;
+}
+.social-media-container a i
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.social-media-container:hover a 
+{
+    color: #bc5e55;
+    
+}
+
+.social-media-container:hover
+{
+    border-color: #bc5e55;
+}
+
+.contact-us-container
+{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.contacts 
+{
+    margin: 10px 5px;
+}
+
+.contacts i
+{
+    margin-right: 10px;
+}
+.location
+{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.location-text i 
+{
+    margin-right: 10px;
 }

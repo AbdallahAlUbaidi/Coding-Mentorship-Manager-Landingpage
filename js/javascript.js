@@ -5,14 +5,14 @@ const menu_container = document.getElementsByClassName('container')[0]
 
 menu_btn.addEventListener('click' , ()=>
 {
-    menu_btn.style.display = "none";
-    vertical_menu.style.display = 'flex';
+    menu_btn.classList.add('menu-btn-open');
+    vertical_menu.classList.add('vertical-nav-open');
     menu_container.classList.add('container-open')
 })
 
 close_menu.addEventListener('click' , ()=>
 {
-    menu_btn.style.display = "flex";
-    vertical_menu.style.display = 'none';
+    vertical_menu.classList.remove('vertical-nav-open');
+    menu_btn.classList.remove('menu-btn-open');
     menu_container.classList.remove('container-open')
 })
